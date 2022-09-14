@@ -10,8 +10,9 @@ import {
 } from "react-native";
 import Task from "./components/Task/index";
 import styles from "./App.components.style";
+import Form from "./components/Form";
 
-export default function App() {
+const App = () => {
   return (
     <View style={styles.container}>
       <View style={styles.body}>
@@ -21,11 +22,12 @@ export default function App() {
           <Task />
         </ScrollView>
       </View>
-      <View style={styles.input}></View>
+      <Form />
 
       <StatusBar style="dark" />
     </View>
   );
 }
+export default App;
 
 
